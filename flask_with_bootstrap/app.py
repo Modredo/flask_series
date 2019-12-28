@@ -1,18 +1,18 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, url_for
 app=Flask(__name__)
 
 posts = [
     {
-        'author':   'Krystian Osiekowicz',
-        'title':    'First Blog Post',
-        'date':     '28-12-2019',
-        'contents': 'This is my first blog entry'
+        'author':       'Krystian Osiekowicz',
+        'title':        'First Blog Post',
+        'date_posted':  '28-12-2019',
+        'contents':     'This is my first blog entry'
     },
     {
-        'author':   'Krystian Osiekowicz',
-        'title':    'Second Blog Post',
-        'date':     '28-12-2019',
-        'contents': 'This is my second blog entry'        
+        'author':       'Krystian Osiekowicz',
+        'title':        'Second Blog Post',
+        'date_posted':  '28-12-2019',
+        'contents':     'This is my second blog entry'        
     }
 ]
 
