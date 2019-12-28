@@ -5,12 +5,14 @@ posts = [
     {
         'author':   'Krystian Osiekowicz',
         'title':    'First BLog Post',
-        'date':     '28-12-2019'
+        'date':     '28-12-2019',
+        'contents': 'This is my first blog entry'
     },
     {
         'author':   'Krystian Osiekowicz',
         'title':    'Second BLog Post',
-        'date':     '28-12-2019'        
+        'date':     '28-12-2019',
+        'contents': 'This is my second blog entry'        
     }
 ]
 
@@ -21,7 +23,7 @@ def home():
 
 @app.route("/about")
 def abount():
-    return render_template('about.html')
+    return render_template('about.html', title='About')
 
 if __name__=='__main__':
     app.run(debug=True)
